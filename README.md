@@ -1,2 +1,40 @@
-# node-MongoDB
- JavaScript - Node, Npm, Express e MongoDB
+# Estudo de Desenvolvimento com Express.js
+
+Este repositório é parte do meu estudo em desenvolvimento web utilizando o framework Express.js. O código apresentado configura um servidor web simples utilizando o Express, além de integrar rotas, views com EJS, e arquivos estáticos.
+
+## Pré-requisitos
+
+- Node.js instalado
+- Conhecimento básico em JavaScript
+- Familiaridade com Express.js
+
+## Instalação
+
+1. **Clone este repositório:**
+
+    ```bash
+    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    ```
+
+2. **Navegue até o diretório do projeto:**
+
+    ```bash
+    cd nome-do-repositorio
+    ```
+
+3. **Instale as dependências:**
+
+    ```bash
+    npm install
+    ```
+
+## Configuração
+
+O arquivo `routes/routes.js` contém as definições de rotas para o aplicativo. Certifique-se de ajustar conforme necessário para atender aos requisitos específicos do seu projeto.
+
+## Execução
+
+Execute o seguinte comando para iniciar o servidor:
+
+```bash
+npm start
