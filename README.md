@@ -13,13 +13,13 @@ Este repositório é parte do meu estudo em desenvolvimento web utilizando o fra
 1. **Clone este repositório:**
 
     ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/leitecsleite/node-MongoDB.git
     ```
 
 2. **Navegue até o diretório do projeto:**
 
     ```bash
-    cd nome-do-repositorio
+    cd node-MongoDB
     ```
 
 3. **Instale as dependências:**
@@ -77,13 +77,13 @@ This repository is part of my web development study using the Express.js framewo
 1. **Clone this repository:**
 
     ```bash
-    git clone https://github.com/your-username/repository-name.git
+    git clone [https://github.com/your-username/repository-name.git](https://github.com/leitecsleite/node-MongoDB.git
     ```
 
 2. **Navigate to the project directory:**
 
     ```bash
-    cd repository-name
+    cd node MongoDB
     ```
 
 3. **Install dependencies:**
