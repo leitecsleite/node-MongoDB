@@ -1,9 +1,5 @@
 exports.HomePage = (req, res) => {
-    res.send(` 
-    <form action="/" method="POST"> 
-    Nome: <input type="text" name="nome" /><br>
-    Idade: <input type="number" name="idade" /><br>
-    `)
+    res.render('index')
 }
 
 exports.SearchPage =(req, res) => {
