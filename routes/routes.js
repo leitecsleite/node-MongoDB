@@ -4,7 +4,8 @@ const HomeController = require('../src/controllers/HomeController');
 
 
 
+
 route.get('/', HomeController.HomePage);
-route.post('/', HomeController.SearchPage);
+route.post('/', HomeController.sendData);
 
 module.exports = route;
