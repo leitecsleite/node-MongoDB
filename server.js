@@ -3,6 +3,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes/routes');
 const path = require('path');
+const session = require('express-session');
+const flash = require('connect-flash');
+const connectMongoStore = require('connect-mongo');
+
 const { middlewareGlobal } = require('./src/middlewares/middleware.js');
 
 
@@ -16,6 +20,24 @@ mongoose.connect(process.env.CONNECTIONMONG, { useNewUrlParser: true, useUnified
     }).catch(err => console.log(err));
 
 // const { MongoClient, ServerApiVersion } = require('mongodb');
+
+const sessionOptions = session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUninitialized: true,
+    cookie: {
+        maxAge: 1000 * 60 * 60 * 24 * 7,
+        sameSite: 'none',
+        secure: true
+    },
+    store: connectMongoStore.create({
+        mongoUrl: process.env.CONNECTIONMONG,
+        mongoOptions: {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        }
+    })
+})
 
 
 const app = express();
