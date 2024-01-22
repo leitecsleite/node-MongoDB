@@ -4,3 +4,14 @@ exports.middlewareGlobal = (req,res,next) =>{
     }
     next(); 
 }; 
+
+exports.checkcsrf = (err,req,res,next) =>{
+  if(err && err.code === 'EBADCSRFTOKEN'){
+    return res.status(403).send('Bad CSRF Token');
+  }
+}; 
+
+exports.csrfMiddleware = (err,req,res,next) =>{
+    res.locals.csrfToken = req.csrfToken();
+    next();
+}
